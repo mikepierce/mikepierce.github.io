@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href=".">
+    <meta name="description" content="A Template Webpage using math-writing.css" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/math-writing.css"/>
+    <!-- <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/> -->
+    <script type="text/javascript" src="assets/MathJax/MathJax.js?config=default"></script>
+    <title>math-writing CSS</title>
+</head>
+
+<body>
+    <h1 class="center">A Template Webpage using <code>math-writing.css</code></h1>
+    <h2 class="center">Mike Pierce</h2>
+    <h4 class="center">Abstract</h4>
+    <p>
+        This page has two purposes: 
+        to serve as a general tutorial on how one can publish mathematical content on webpages,
+        and also to showcase <a href=""><code>math-writing.css</code></a>. 
+        math-writing.css provides CSS classes that emulate
+        some of nice theorem-like environments you can create in LaTeX 
+        using the <a target="_blank" href="https://ctan.org/pkg/amsthm?lang=en">amsthm</a> package.
+        This, in conjunction with <a href="">MathJax</a>,
+        makes writing mathematics on a website straightforward.
+        My hope is that providing this will encourage mathematicians 
+        to stop using WordPress blogs that are clunky and display mathematics poorly, 
+        and to stop typing up useful expository writing as a PDF, 
+        which is harder for search engines to index and 
+        <a target="_blank" href="https://wp.wwu.edu/webtech/accessible-pdf/">notably harder to make accessible than content on a webpage</a>.
+    </p>
+    <p>
+        I should separate the exposition from the actual guide?
+    </p>
+    <p>
+    Ams.css or something like it?
+
+    http://jkorpela.fi/math/
+    mathjax
+    pdftohtml???
+    http://math.chapman.edu/~jipsen/latexmathjax/index.html
+    https://tex.stackexchange.com/q/23804/52612
+    https://texfaq.org/FAQ-mathml
+
+
+    </p>
+
+    <h2>Contents</h2>
+    <ul>
+        <li>
+            Showcasing math-writing.css
+            <ul>
+                <li>Theorem and Proof Environments</li>
+                <li>Exercises</li>
+                <li>Footnotes</li>
+            </ul>
+        </li>
+        <li>
+            Installing and Using math-writing.css
+        </li>
+        <li>
+            Completely Unrelated Techniques for Typing Math on a Webpage
+            <ul>
+                <li> MathJax </li>
+                <li> Commutative Diagrams </li>
+                <li> Comments </li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <h2>Installing and Using <code>math-writing.css</code></h2>
+    <p>
+        I assume most academic mathematicians have access
+        to a basic website through their institution.
+        To use MathWriting.css
+    </p>
+    <p>
+        Then to see the HTML markup for how I'm using MathWriting.css,
+        you can view the source of this webpage.
+        If you're using Google Chrome ...
+        If you're using Firefox ...
+        If you're using Safari ...
+    </p>
+
+    <h2>Features of MathWriting.css</h2>
+    <p>
+    GO DIG IN MY research page to SEE WHAT I NEED TO INCLDUE HERE
+    </p>
+    <div class="theorem">
+        There once was a man from Nantucket.
+    </div>
+    <div class="proof">
+        <p>
+        Here is the proof of that last claim.
+        Here is the proof of that last claim.
+        Here is the proof of that last claim.
+        Here is the proof of that last claim.
+        Here is the proof of that last claim.
+        Here is the proof of that last claim.
+        Here is the proof of that last claim.
+        Here is the proof of that last claim.
+        </p>
+    </div>
+    <p>
+        Then of course any good mathematical writing 
+        tells the reader to do some exercises to solidify their understanding.
+        You can write 
+    </p>
+    <ol class="exercises">
+        <li> This is an exercise. </li>
+        <li> This is another exercise. </li>
+        <li> Does math look dumb now? $f(x) = 3x^2+C$</li>
+        <li> 
+            This is an exercise that has a bunch of parts. 
+            <ol>
+                <li> This is just part of an exercise </li>
+                <li> Here's a second part! </li>
+            </ol>
+        </li>
+        <li class="hard"> This is a hard exercise with a star next to it.</li>
+        <li class="hardhard"> This is an even harder exercise!</li>
+    </ol>
+
+    <details class="problem-solution">
+        <summary>
+            Here's an exercise that has a solution on this page,
+            but the solution is hidden until the exercise is clicked.
+        </summary>
+        <p>
+            ahHA! Here is the solution!
+            Yep you've just gotta click in the problem to reveal the solution.
+        </p>
+    </details>
+
+    <h2>Mathematical Notation with MathJax</h2>
+    <p>
+        This is the same thing MathOverflow uses.
+    </p>
+    <p>
+        One major limitation of MathJax though&mdash;really a
+        limitation of all the means of typing mathematics on a webpage 
+        that I've listed&mdash;is that you can't create <i>sophisticated</i>
+        commutative diagrams.
+        ...
+    </p>
+
+    <h2>Commutative Diagrams</h2>
+    <p>
+        AMSCD
+    </p>
+    <p>
+        There's not yet a nice way to do this.
+        I've used this trick of exporting it from LaTeX...
+    </p>
+
+    <h2>Add Comments to Your Webpage</h2>
+    <p>
+        I said I want mathematicians to ditch WordPress,
+        so I should explain how one can add comments to their webpage.
+        To do this by yourself you'd have to have a database running on the server 
+        to keep track of the all the comments.
+        So instead, to keep things easy, I'd recommend using a third-party service like 
+        <a target="_blank" href="https://www.htmlcommentbox.com/">htmlcommentbox.com</a>
+        or <a target="blank" href="https://www.brianshim.com/webtricks/add-a-comment-wall-to-your-website/">or any of the others listed here</a>.
+        Below I'm using ... so you can leave comments on this page. :) 
+    </p>
+    <p>
+        Or just make a twitter link ...
+    </p>
+
+    <h2>Comments</h2>
+    <p>
+        ...
+    </p>
+
+</body>
+</html>
+
